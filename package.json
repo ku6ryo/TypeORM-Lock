@@ -1,0 +1,18 @@
+{
+  "name": "typeorm-lock",
+  "version": "1.0.0",
+  "author": "Ryo Kuroyanagi",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "migrate": "npx typeorm-ts-node-commonjs migration:run -d ./src/typeorm/data-source.ts",
+    "start": "ts-node src/main.ts"
+  },
+  "dependencies": {
+    "@types/node": "^20.3.1",
+    "mysql2": "^3.4.1",
+    "ts-node": "^10.9.1",
+    "typeorm": "^0.3.17",
+    "typescript": "^5.1.3"
+  }
+}
